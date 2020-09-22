@@ -5,6 +5,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.io.File;
+import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.sql.Connection;
@@ -22,18 +23,29 @@ public class FacebookDao implements FacebookDaoInterface {
 	@Override
 	public int createProfileDAO(FacebookUser fu) throws IOException  {
 		
-		
+		int c=0;
+		char input;
 		File f1 = new File("e:/hsbc_file/facebookuser.txt");
 		FileOutputStream out=new FileOutputStream(f1,true);
 		
 		
-		String st= fu.getName()+" "+ fu.getEmail() +" "+ fu.getPassword() + " "+fu.getAddress();
+		String st= "Name:"+fu.getName()+" "+ "Email:" + fu.getEmail() +" "+ "Password:" +fu.getPassword() + " "+"Address:"+fu.getAddress() + "\n";
 		 for(int i=0;i<st.length();i++)
 		 {
 			out.write(st.charAt(i)); 
 		 }
 		 out.close();
+		 
+		 FileInputStream in=new FileInputStream(f1);
 		
+			
+			while(!((c=in.read())==-1))
+			{
+				input = (char)c;
+				System.out.print(input);
+			}
+			
+		in.close();
 		
 		 /*Connection con=null;
         int i=0;
