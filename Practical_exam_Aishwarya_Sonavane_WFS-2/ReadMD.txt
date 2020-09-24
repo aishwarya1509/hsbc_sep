@@ -1,0 +1,17 @@
+READMD File
+
+
+Layer                                                   File                                               Decription
+Data Access Layer                                    ExamDao.java                                          Create List and add data
+Business Logic Layer                                 ExamBusiness.java                                     Take User input
+View Layer                                           Exam.view                                             Display Menu
+Entity :                                              ExamProduct.java                                     pojo file 
+ExamProduct                                           ExamFoodItem.java 
+ExamFoodItem                                          ExamApparel.java 
+ExamApparel                                           ExamElectronics.java 
+ExamElectronics
+
+Utility :
+ControllerFactory                                         ControllerFactory.java                                 
+DaoFactory                                                DaoFactory.java
+ExamException                                              ExamException.java                               User Defined Exception used ins showlistDao1();
