@@ -1,0 +1,67 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+  <display-name>Archetype Created Web Application</display-name>
+  <servlet>
+  	<servlet-name>RegisterationServlet</servlet-name>
+  	<display-name>RegisterationServlet</display-name>
+  	<description></description>
+  	<servlet-class>com.webinsta.controller.RegisterationServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>LoginServlet</servlet-name>
+  	<display-name>LoginServlet</display-name>
+  	<description></description>
+  	<servlet-class>com.webinsta.controller.LoginServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>FriendList</servlet-name>
+  	<display-name>FriendList</display-name>
+  	<description></description>
+  	<servlet-class>com.webinsta.controller.FriendList</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>RegisterationServletwhatsapp</servlet-name>
+  	<display-name>RegisterationServletwhatsapp</display-name>
+  	<description></description>
+  	<servlet-class>com.webwhatsapp.controller.RegisterationServletwhatsapp</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>LoginServletwhatsapp</servlet-name>
+  	<display-name>LoginServletwhatsapp</display-name>
+  	<description></description>
+  	<servlet-class>com.webwhatsapp.controller.LoginServletwhatsapp</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>FriendListwhatsapp</servlet-name>
+  	<display-name>FriendListwhatsapp</display-name>
+  	<description></description>
+  	<servlet-class>com.webwhatsapp.controller.FriendListwhatsapp</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>RegisterationServlet</servlet-name>
+  	<url-pattern>/RegisterationServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>LoginServlet</servlet-name>
+  	<url-pattern>/LoginServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>FriendList</servlet-name>
+  	<url-pattern>/FriendList</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>RegisterationServletwhatsapp</servlet-name>
+  	<url-pattern>/RegisterationServletwhatsapp</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>LoginServletwhatsapp</servlet-name>
+  	<url-pattern>/LoginServletwhatsapp</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>FriendListwhatsapp</servlet-name>
+  	<url-pattern>/FriendListwhatsapp</url-pattern>
+  </servlet-mapping>
+</web-app>
